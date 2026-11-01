@@ -1,0 +1,29 @@
+{
+  "name": "chaoguang-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "朝光 · 向光而行，代码生长。Hexo + GitHub Pages + Waline",
+  "scripts": {
+    "dev": "node tools/prepare-assets.cjs && hexo server --ip 127.0.0.1 --port 4000",
+    "start": "npm run dev",
+    "build": "node tools/prepare-assets.cjs && hexo clean && hexo generate",
+    "build:pages": "node tools/prepare-assets.cjs && node tools/pages-config.cjs && hexo clean && hexo generate --config _config.yml,.pages-config.yml",
+    "check": "node tools/check-site.cjs",
+    "clean": "hexo clean",
+    "new": "hexo new"
+  },
+  "engines": { "node": ">=22.12.0" },
+  "hexo": { "version": "8.1.2" },
+  "dependencies": {
+    "@waline/client": "3.16.1",
+    "hexo": "8.1.2",
+    "hexo-generator-archive": "2.0.0",
+    "hexo-generator-feed": "4.0.0",
+    "hexo-generator-index": "4.0.0",
+    "hexo-generator-sitemap": "3.0.1",
+    "hexo-generator-tag": "2.0.0",
+    "hexo-renderer-ejs": "2.0.0",
+    "hexo-renderer-marked": "7.0.1",
+    "hexo-server": "3.0.0"
+  }
+}

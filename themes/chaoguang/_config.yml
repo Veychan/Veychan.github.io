@@ -1,0 +1,22 @@
+version: 1.0.0
+hero_eyebrow: A DIGITAL GARDEN, GROWING TOWARD THE LIGHT
+hero_title: 向光而行
+hero_subtitle: 代码生长。
+hero_description: 记录生活的温度，探索数据与 AI。<br>在市场中思考，在山野间呼吸。
+footer_motto: 心有向日葵，目之所及皆是光。
+sections:
+  - name: 生活随笔
+    path: topics/life/
+    english: LIFE & NOTES
+    icon: sun
+    description: 山野、日常与灵感，收藏平凡生活里的微光。
+  - name: 数据与AI
+    path: topics/data-ai/
+    english: DATA & AI
+    icon: terminal
+    description: 数据分析、人工智能与实践，让好奇成为可以验证的探索。
+  - name: 投资与交易
+    path: topics/investing/
+    english: INVESTING & TRADING
+    icon: chart
+    description: 市场观察、研究笔记与交易复盘，记录思考的来路。

@@ -1,0 +1,4 @@
+<footer class="site-footer container">
+  <div class="footer-top"><a class="footer-brand" href="<%= url_for('/') %>"><%- cg_icon('sun') %><%= config.title %><span>把日子写成诗，把热爱写成代码。</span></a><a href="<%= url_for('atom.xml') %>" class="rss-link"><%- cg_icon('rss') %> RSS 订阅 <%- cg_icon('arrow') %></a></div>
+  <div class="footer-bottom"><span>© <%= date(new Date(), 'YYYY') %> <%= config.author %> <span class="footer-dot">·</span> <%= theme.footer_motto %></span><span>BUILT WITH <a href="https://hexo.io/" target="_blank" rel="noopener noreferrer">HEXO</a> <i>×</i> GITHUB PAGES <i>×</i> WALINE <span class="status-dot"></span></span></div>
+</footer>

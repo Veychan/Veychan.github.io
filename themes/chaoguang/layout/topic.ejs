@@ -1,0 +1,5 @@
+<section class="container collection-page topic-page">
+  <header class="collection-header"><p class="section-kicker"><%= page.section.english %> / 朝光的三个方向</p><h1><%= page.section.name %><span>。</span></h1><p><%= page.section.description %></p><nav class="topic-switcher" aria-label="切换栏目"><% theme.sections.forEach(section => { %><a href="<%= url_for(section.path) %>" <%- section.name === page.section.name ? 'aria-current="page"' : '' %>><%= section.name %></a><% }); %></nav></header>
+  <% if (page.posts.length) { %><div class="archive-list"><% page.posts.each(post => { %><a class="archive-item" href="<%= url_for(post.path) %>"><time datetime="<%= date_xml(post.date) %>"><%= date(post.date, 'MM.DD') %></time><div><span class="category-label"><%= cg_category(post) %></span><h3><%= post.title %></h3><p><%= post.description %></p></div><%- cg_icon('arrow') %></a><% }); %></div><% } else { %><div class="topic-empty"><%- cg_icon(page.section.icon) %><h2>下一篇记录，正在生长。</h2><p>这一块花园已经留好，期待新的灵感在这里生根。</p></div><% } %>
+  <a class="text-link" href="<%= url_for('/') %>#topics">← 返回全部栏目</a>
+</section>

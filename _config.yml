@@ -1,0 +1,78 @@
+# 朝光 · 修改这里即可定制你的博客
+title: 朝光
+subtitle: 向光而行，代码生长。
+description: 生活随笔、数据与AI、投资与交易。记录日常的微光，探索数据的可能，留下市场中的思考。
+author: 朝光
+language: zh-CN
+timezone: Asia/Shanghai
+# 上线时 GitHub Actions 会自动识别地址；自定义域名请填完整网址。
+url: https://veychan.github.io
+root: /
+permalink: posts/:title/
+pretty_urls:
+  trailing_index: false
+  trailing_html: false
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+code_dir: downloads/code
+skip_render:
+  - .nojekyll
+include:
+  - .nojekyll
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: []
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: false
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: '  '
+  wrap: true
+prismjs:
+  enable: false
+date_format: YYYY.MM.DD
+time_format: HH:mm
+updated_option: date
+per_page: 6
+pagination_dir: page
+index_generator:
+  path: ''
+  per_page: 6
+  order_by: -date
+archive_generator:
+  per_page: 0
+  yearly: true
+  monthly: true
+tag_generator:
+  per_page: 0
+theme: chaoguang
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  content: true
+sitemap:
+  path: sitemap.xml
+# 留空时显示未开放状态；填入已部署的 Waline 后端 HTTPS 地址即可启用。
+# 也可在 GitHub 仓库 Variables 中设置 WALINE_SERVER_URL。
+waline:
+  server_url: ''
+  lang: zh-CN
+  required_meta: [nick]
+  page_size: 10
+social:
+  github: https://github.com/Veychan
+  email: ''
+deploy:
+  type: ''

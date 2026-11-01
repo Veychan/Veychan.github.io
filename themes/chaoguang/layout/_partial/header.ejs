@@ -1,0 +1,23 @@
+<header class="site-header">
+  <div class="header-inner container">
+    <a class="brand" href="<%= url_for('/') %>" aria-label="朝光首页">
+      <span class="brand-symbol"><%- cg_icon('sun') %></span>
+      <span class="brand-name"><%= config.title %><small>CHAO GUANG</small></span>
+      <span class="brand-slash">/</span><span class="brand-note">向光生长的数字花园</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a class="<%= is_home() || is_post() || page.type === 'topic' ? 'active' : '' %>" href="<%= url_for('/') %>#topics"><span>01</span> 栏目</a>
+      <a class="<%= is_archive() ? 'active' : '' %>" href="<%= url_for('archives/') %>"><span>02</span> 归档</a>
+      <a class="<%= page.type === 'about' ? 'active' : '' %>" href="<%= url_for('about/') %>"><span>03</span> 关于</a>
+    </nav>
+    <div class="header-actions">
+      <button class="search-trigger" aria-label="搜索文章"><%- cg_icon('search') %><span>搜索</span><kbd>/</kbd></button>
+      <span class="action-divider"></span>
+      <button class="theme-toggle icon-button" aria-label="切换浅色模式" title="切换配色"><span class="light-icon"><%- cg_icon('sun') %></span><span class="dark-icon"><%- cg_icon('moon') %></span></button>
+      <button class="menu-toggle icon-button" aria-label="打开导航菜单" aria-controls="mobile-nav" aria-expanded="false"><%- cg_icon('menu') %></button>
+    </div>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="移动导航" hidden>
+    <a href="<%= url_for('/') %>#topics">01 / 栏目</a><a href="<%= url_for('archives/') %>">02 / 归档</a><a href="<%= url_for('about/') %>">03 / 关于</a>
+  </nav>
+</header>
