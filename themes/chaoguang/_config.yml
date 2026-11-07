@@ -2,6 +2,8 @@ version: 1.0.0
 hero_eyebrow: A DIGITAL GARDEN, GROWING TOWARD THE LIGHT
 hero_title: 向光而行
 hero_subtitle: 代码生长。
+hero_motto: 将个人数字化、投入AI浪潮、用AI辅助人生每一件事
+hero_motto_prompt: 凡事先问：我可以让AI帮我做什么？
 hero_description: 记录生活的温度，探索数据与 AI。<br>在市场中思考，在山野间呼吸。
 footer_motto: 心有向日葵，目之所及皆是光。
 sections:

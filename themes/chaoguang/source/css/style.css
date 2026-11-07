@@ -31,3 +31,5 @@ html[data-theme=light]{--bg:#f8f6ef;--panel:#fffdf7;--panel-hover:#f0ede3;--text
 .touch-hint{display:none}
 @media(pointer:coarse){.pointer-hint{display:none}.touch-hint{display:inline}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.hero-motto{max-width:38em;margin:0 0 22px;padding-left:15px;border-left:2px solid #efc06d;font-size:clamp(12px,1.1vw,15px);line-height:1.9;color:#dedfd3;overflow-wrap:anywhere}.hero-motto span,.hero-motto strong{display:block}.hero-motto strong{color:#f5c575;font-weight:600}
